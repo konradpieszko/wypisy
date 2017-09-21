@@ -1,0 +1,38 @@
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\bin\Debug\rtfapp.exe.config
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\bin\Debug\rtfapp.exe
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\bin\Debug\rtfapp.pdb
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\obj\Debug\rtfapp.csprojResolveAssemblyReference.cache
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\obj\Debug\rtfapp.Properties.Resources.resources
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\obj\Debug\rtfapp.csproj.GenerateResource.Cache
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\obj\Debug\rtfapp.exe
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\obj\Debug\rtfapp.pdb
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\bin\Debug\MySql.Data.dll
+c:\users\aneczka\documents\visual studio 2015\Projects\rtfapp\rtfapp\bin\Debug\MySql.Data.xml
+E:\Konrad\VS Projects\rtfapp\rtfapp\bin\Debug\rtfapp.exe.config
+E:\Konrad\VS Projects\rtfapp\rtfapp\obj\Debug\rtfapp.exe
+E:\Konrad\VS Projects\rtfapp\rtfapp\obj\Debug\rtfapp.pdb
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\bin\Debug\rtfapp.exe.config
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.exe
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.pdb
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\bin\Debug\rtfapp.exe
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\bin\Debug\rtfapp.pdb
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\bin\Debug\MySql.Data.xml
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.csprojResolveAssemblyReference.cache
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.Properties.Resources.resources
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.csproj.GenerateResource.Cache
+E:\Konrad\Konrad Pliki\GIT_BAZA\rtfapp\rtfapp\obj\Debug\rtfapp.OknoWypisu.resources
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\rtfapp.exe.config
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.exe
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.pdb
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.csprojResolveAssemblyReference.cache
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.OknoWypisu.resources
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.Properties.Resources.resources
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.csproj.GenerateResource.Cache
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\rtfapp.exe
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\rtfapp.pdb
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\rtfapp.exe.manifest
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\rtfapp.application
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.TrustInfo.xml
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.exe.manifest
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\obj\Debug\rtfapp.application
+C:\Users\Szpital.KARDIO_DL5\Documents\Konrad\rtfapp\rtfapp\bin\Debug\MySql.Data.dll
