@@ -2,13 +2,14 @@
 <xs:schema id="BazaDataSet" targetNamespace="http://tempuri.org/BazaDataSet.xsd" xmlns:mstns="http://tempuri.org/BazaDataSet.xsd" xmlns="http://tempuri.org/BazaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="4" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="5" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Baza" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Baza (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.Baza" Provider="MySql.Data.MySqlClient" />
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BazaPacjentow_v2ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="BazaPacjentow_v2ConnectionString (Settings)" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.BazaPacjentow_v2ConnectionString" Provider="System.Data.OleDb" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString2" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString2" Provider="MySql.Data.MySqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString1" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString2" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString1" Provider="MySql.Data.MySqlClient" />
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bazapacjentow_v2ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bazapacjentow_v2ConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.rtfapp.Properties.Settings.GlobalReference.Default.bazapacjentow_v2ConnectionString2" Provider="MySql.Data.MySqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="badania_laboratoryjneTableAdapter" GeneratorDataComponentClassName="badania_laboratoryjneTableAdapter" Name="badania_laboratoryjne" UserDataComponentName="badania_laboratoryjneTableAdapter">
@@ -624,7 +625,7 @@ VALUES        (@icd10, @nazwarozp, @roszrozp)</CommandText>
               <Mapping SourceColumn="Opis" DataSetColumn="Opis" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="Baza (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeletByNumKgQuery" Modifier="Public" Name="DeletByNumKgQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeletByNumKgQuery">
+              <DbSource ConnectionRef="Baza (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeletByNumKgQuery" Modifier="Public" Name="DeletByNumKgQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeletByNumKgQuery">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM `elektrokardiogramy` WHERE NumKg=@NumKg</CommandText>
@@ -645,7 +646,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="Baza (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+              <DbSource ConnectionRef="Baza (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQuery">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO `elektrokardiogramy` (`PESEL`, `NumKg`, `Rytm`, `Czestotliwosc`, `Blok`, `Opis`) VALUES (@PESEL, @NumKg, @Rytm, @Czestotliwosc, @Blok, @Opis)</CommandText>
@@ -1485,6 +1486,86 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="biezaceTableAdapter" GeneratorDataComponentClassName="biezaceTableAdapter" Name="biezace" UserDataComponentName="biezaceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Baza (Settings)" DbObjectName="`bazapacjentow v2`.biezace" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `imie_i_nazwisko`, `NumKg` FROM `bazapacjentow v2`.`biezace`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="imie_i_nazwisko" DataSetColumn="imie_i_nazwisko" />
+              <Mapping SourceColumn="NumKg" DataSetColumn="NumKg" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="biezace_wypisyTableAdapter" GeneratorDataComponentClassName="biezace_wypisyTableAdapter" Name="biezace_wypisy" UserDataComponentName="biezace_wypisyTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bazapacjentow_v2ConnectionString2 (Settings)" DbObjectName="`bazapacjentow v2`.biezace_wypisy" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `biezace_wypisy` WHERE ((`wyp_id` = @p1) AND (`NumKg` = @p2) AND ((@p3 = 1 AND `data_dodania` IS NULL) OR (`data_dodania` = @p4)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="wyp_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NumKg" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `biezace_wypisy` (`NumKg`, `data_dodania`) VALUES (@p1, @p2)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NumKg" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `wyp_id`, `NumKg`, `data_dodania` FROM `biezace_wypisy`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `biezace_wypisy` SET `NumKg` = @p1, `data_dodania` = @p2 WHERE ((`wyp_id` = @p3) AND (`NumKg` = @p4) AND ((@p5 = 1 AND `data_dodania` IS NULL) OR (`data_dodania` = @p6)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NumKg" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="wyp_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NumKg" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="wyp_id" DataSetColumn="wyp_id" />
+              <Mapping SourceColumn="NumKg" DataSetColumn="NumKg" />
+              <Mapping SourceColumn="data_dodania" DataSetColumn="data_dodania" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="bazapacjentow_v2ConnectionString2 (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO `biezace_wypisy` (`NumKg`, `data_dodania`) VALUES (@NumKg, @data)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="NumKg" ColumnName="NumKg" DataSourceName="`bazapacjentow v2`.biezace_wypisy" DataTypeServer="varchar(255)(255)" DbType="String" Direction="Input" ParameterName="@NumKg" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumn="NumKg" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="data" ColumnName="data_dodania" DataSourceName="`bazapacjentow v2`.biezace_wypisy" DataTypeServer="date" DbType="DateTime" Direction="Input" ParameterName="@data" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="data_dodania" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -1493,7 +1574,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
   <xs:element name="BazaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BazaDataSet" msprop:Generator_UserDSName="BazaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="badania_laboratoryjne" msprop:Generator_TableClassName="badania_laboratoryjneDataTable" msprop:Generator_TableVarName="tablebadania_laboratoryjne" msprop:Generator_RowChangedName="badania_laboratoryjneRowChanged" msprop:Generator_TablePropName="badania_laboratoryjne" msprop:Generator_RowDeletingName="badania_laboratoryjneRowDeleting" msprop:Generator_RowChangingName="badania_laboratoryjneRowChanging" msprop:Generator_RowEvHandlerName="badania_laboratoryjneRowChangeEventHandler" msprop:Generator_RowDeletedName="badania_laboratoryjneRowDeleted" msprop:Generator_RowClassName="badania_laboratoryjneRow" msprop:Generator_UserTableName="badania_laboratoryjne" msprop:Generator_RowEvArgName="badania_laboratoryjneRowChangeEvent">
+        <xs:element name="badania_laboratoryjne" msprop:Generator_TableClassName="badania_laboratoryjneDataTable" msprop:Generator_TableVarName="tablebadania_laboratoryjne" msprop:Generator_TablePropName="badania_laboratoryjne" msprop:Generator_RowDeletingName="badania_laboratoryjneRowDeleting" msprop:Generator_RowChangingName="badania_laboratoryjneRowChanging" msprop:Generator_RowEvHandlerName="badania_laboratoryjneRowChangeEventHandler" msprop:Generator_RowDeletedName="badania_laboratoryjneRowDeleted" msprop:Generator_UserTableName="badania_laboratoryjne" msprop:Generator_RowChangedName="badania_laboratoryjneRowChanged" msprop:Generator_RowEvArgName="badania_laboratoryjneRowChangeEvent" msprop:Generator_RowClassName="badania_laboratoryjneRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PESEL" msprop:Generator_ColumnVarNameInTable="columnPESEL" msprop:Generator_ColumnPropNameInRow="PESEL" msprop:Generator_ColumnPropNameInTable="PESELColumn" msprop:Generator_UserColumnName="PESEL" minOccurs="0">
@@ -1537,7 +1618,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hosp_rozp" msprop:Generator_TableClassName="hosp_rozpDataTable" msprop:Generator_TableVarName="tablehosp_rozp" msprop:Generator_RowChangedName="hosp_rozpRowChanged" msprop:Generator_TablePropName="hosp_rozp" msprop:Generator_RowDeletingName="hosp_rozpRowDeleting" msprop:Generator_RowChangingName="hosp_rozpRowChanging" msprop:Generator_RowEvHandlerName="hosp_rozpRowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_rozpRowDeleted" msprop:Generator_RowClassName="hosp_rozpRow" msprop:Generator_UserTableName="hosp_rozp" msprop:Generator_RowEvArgName="hosp_rozpRowChangeEvent">
+        <xs:element name="hosp_rozp" msprop:Generator_TableClassName="hosp_rozpDataTable" msprop:Generator_TableVarName="tablehosp_rozp" msprop:Generator_TablePropName="hosp_rozp" msprop:Generator_RowDeletingName="hosp_rozpRowDeleting" msprop:Generator_RowChangingName="hosp_rozpRowChanging" msprop:Generator_RowEvHandlerName="hosp_rozpRowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_rozpRowDeleted" msprop:Generator_UserTableName="hosp_rozp" msprop:Generator_RowChangedName="hosp_rozpRowChanged" msprop:Generator_RowEvArgName="hosp_rozpRowChangeEvent" msprop:Generator_RowClassName="hosp_rozpRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Hosp_Rozp_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnHosp_Rozp_ID" msprop:Generator_ColumnPropNameInRow="Hosp_Rozp_ID" msprop:Generator_ColumnPropNameInTable="Hosp_Rozp_IDColumn" msprop:Generator_UserColumnName="Hosp_Rozp_ID" type="xs:int" />
@@ -1566,7 +1647,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hospitalizacje" msprop:Generator_TableClassName="hospitalizacjeDataTable" msprop:Generator_TableVarName="tablehospitalizacje" msprop:Generator_RowChangedName="hospitalizacjeRowChanged" msprop:Generator_TablePropName="hospitalizacje" msprop:Generator_RowDeletingName="hospitalizacjeRowDeleting" msprop:Generator_RowChangingName="hospitalizacjeRowChanging" msprop:Generator_RowEvHandlerName="hospitalizacjeRowChangeEventHandler" msprop:Generator_RowDeletedName="hospitalizacjeRowDeleted" msprop:Generator_RowClassName="hospitalizacjeRow" msprop:Generator_UserTableName="hospitalizacje" msprop:Generator_RowEvArgName="hospitalizacjeRowChangeEvent">
+        <xs:element name="hospitalizacje" msprop:Generator_TableClassName="hospitalizacjeDataTable" msprop:Generator_TableVarName="tablehospitalizacje" msprop:Generator_TablePropName="hospitalizacje" msprop:Generator_RowDeletingName="hospitalizacjeRowDeleting" msprop:Generator_RowChangingName="hospitalizacjeRowChanging" msprop:Generator_RowEvHandlerName="hospitalizacjeRowChangeEventHandler" msprop:Generator_RowDeletedName="hospitalizacjeRowDeleted" msprop:Generator_UserTableName="hospitalizacje" msprop:Generator_RowChangedName="hospitalizacjeRowChanged" msprop:Generator_RowEvArgName="hospitalizacjeRowChangeEvent" msprop:Generator_RowClassName="hospitalizacjeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumKg" msprop:Generator_ColumnVarNameInTable="columnNumKg" msprop:Generator_ColumnPropNameInRow="NumKg" msprop:Generator_ColumnPropNameInTable="NumKgColumn" msprop:Generator_UserColumnName="NumKg">
@@ -1598,7 +1679,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pacjenci" msprop:Generator_TableClassName="pacjenciDataTable" msprop:Generator_TableVarName="tablepacjenci" msprop:Generator_RowChangedName="pacjenciRowChanged" msprop:Generator_TablePropName="pacjenci" msprop:Generator_RowDeletingName="pacjenciRowDeleting" msprop:Generator_RowChangingName="pacjenciRowChanging" msprop:Generator_RowEvHandlerName="pacjenciRowChangeEventHandler" msprop:Generator_RowDeletedName="pacjenciRowDeleted" msprop:Generator_RowClassName="pacjenciRow" msprop:Generator_UserTableName="pacjenci" msprop:Generator_RowEvArgName="pacjenciRowChangeEvent">
+        <xs:element name="pacjenci" msprop:Generator_TableClassName="pacjenciDataTable" msprop:Generator_TableVarName="tablepacjenci" msprop:Generator_TablePropName="pacjenci" msprop:Generator_RowDeletingName="pacjenciRowDeleting" msprop:Generator_RowChangingName="pacjenciRowChanging" msprop:Generator_RowEvHandlerName="pacjenciRowChangeEventHandler" msprop:Generator_RowDeletedName="pacjenciRowDeleted" msprop:Generator_UserTableName="pacjenci" msprop:Generator_RowChangedName="pacjenciRowChanged" msprop:Generator_RowEvArgName="pacjenciRowChangeEvent" msprop:Generator_RowClassName="pacjenciRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PESEL" msprop:Generator_ColumnVarNameInTable="columnPESEL" msprop:Generator_ColumnPropNameInRow="PESEL" msprop:Generator_ColumnPropNameInTable="PESELColumn" msprop:Generator_UserColumnName="PESEL">
@@ -1660,7 +1741,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="rozpoznania" msprop:Generator_TableClassName="rozpoznaniaDataTable" msprop:Generator_TableVarName="tablerozpoznania" msprop:Generator_RowChangedName="rozpoznaniaRowChanged" msprop:Generator_TablePropName="rozpoznania" msprop:Generator_RowDeletingName="rozpoznaniaRowDeleting" msprop:Generator_RowChangingName="rozpoznaniaRowChanging" msprop:Generator_RowEvHandlerName="rozpoznaniaRowChangeEventHandler" msprop:Generator_RowDeletedName="rozpoznaniaRowDeleted" msprop:Generator_RowClassName="rozpoznaniaRow" msprop:Generator_UserTableName="rozpoznania" msprop:Generator_RowEvArgName="rozpoznaniaRowChangeEvent">
+        <xs:element name="rozpoznania" msprop:Generator_TableClassName="rozpoznaniaDataTable" msprop:Generator_TableVarName="tablerozpoznania" msprop:Generator_TablePropName="rozpoznania" msprop:Generator_RowDeletingName="rozpoznaniaRowDeleting" msprop:Generator_RowChangingName="rozpoznaniaRowChanging" msprop:Generator_RowEvHandlerName="rozpoznaniaRowChangeEventHandler" msprop:Generator_RowDeletedName="rozpoznaniaRowDeleted" msprop:Generator_UserTableName="rozpoznania" msprop:Generator_RowChangedName="rozpoznaniaRowChanged" msprop:Generator_RowEvArgName="rozpoznaniaRowChangeEvent" msprop:Generator_RowClassName="rozpoznaniaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Rozp_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnRozp_ID" msprop:Generator_ColumnPropNameInRow="Rozp_ID" msprop:Generator_ColumnPropNameInTable="Rozp_IDColumn" msprop:Generator_UserColumnName="Rozp_ID" type="xs:int" />
@@ -1688,7 +1769,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="elektrokardiogramy" msprop:Generator_TableClassName="elektrokardiogramyDataTable" msprop:Generator_TableVarName="tableelektrokardiogramy" msprop:Generator_RowChangedName="elektrokardiogramyRowChanged" msprop:Generator_TablePropName="elektrokardiogramy" msprop:Generator_RowDeletingName="elektrokardiogramyRowDeleting" msprop:Generator_RowChangingName="elektrokardiogramyRowChanging" msprop:Generator_RowEvHandlerName="elektrokardiogramyRowChangeEventHandler" msprop:Generator_RowDeletedName="elektrokardiogramyRowDeleted" msprop:Generator_RowClassName="elektrokardiogramyRow" msprop:Generator_UserTableName="elektrokardiogramy" msprop:Generator_RowEvArgName="elektrokardiogramyRowChangeEvent">
+        <xs:element name="elektrokardiogramy" msprop:Generator_TableClassName="elektrokardiogramyDataTable" msprop:Generator_TableVarName="tableelektrokardiogramy" msprop:Generator_TablePropName="elektrokardiogramy" msprop:Generator_RowDeletingName="elektrokardiogramyRowDeleting" msprop:Generator_RowChangingName="elektrokardiogramyRowChanging" msprop:Generator_RowEvHandlerName="elektrokardiogramyRowChangeEventHandler" msprop:Generator_RowDeletedName="elektrokardiogramyRowDeleted" msprop:Generator_UserTableName="elektrokardiogramy" msprop:Generator_RowChangedName="elektrokardiogramyRowChanged" msprop:Generator_RowEvArgName="elektrokardiogramyRowChangeEvent" msprop:Generator_RowClassName="elektrokardiogramyRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EkgID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEkgID" msprop:Generator_ColumnPropNameInRow="EkgID" msprop:Generator_ColumnPropNameInTable="EkgIDColumn" msprop:Generator_UserColumnName="EkgID" type="xs:int" />
@@ -1737,7 +1818,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hosp_leki" msprop:Generator_TableClassName="hosp_lekiDataTable" msprop:Generator_TableVarName="tablehosp_leki" msprop:Generator_RowChangedName="hosp_lekiRowChanged" msprop:Generator_TablePropName="hosp_leki" msprop:Generator_RowDeletingName="hosp_lekiRowDeleting" msprop:Generator_RowChangingName="hosp_lekiRowChanging" msprop:Generator_RowEvHandlerName="hosp_lekiRowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_lekiRowDeleted" msprop:Generator_RowClassName="hosp_lekiRow" msprop:Generator_UserTableName="hosp_leki" msprop:Generator_RowEvArgName="hosp_lekiRowChangeEvent">
+        <xs:element name="hosp_leki" msprop:Generator_TableClassName="hosp_lekiDataTable" msprop:Generator_TableVarName="tablehosp_leki" msprop:Generator_TablePropName="hosp_leki" msprop:Generator_RowDeletingName="hosp_lekiRowDeleting" msprop:Generator_RowChangingName="hosp_lekiRowChanging" msprop:Generator_RowEvHandlerName="hosp_lekiRowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_lekiRowDeleted" msprop:Generator_UserTableName="hosp_leki" msprop:Generator_RowChangedName="hosp_lekiRowChanged" msprop:Generator_RowEvArgName="hosp_lekiRowChangeEvent" msprop:Generator_RowClassName="hosp_lekiRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idhosp_leki" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidhosp_leki" msprop:Generator_ColumnPropNameInRow="idhosp_leki" msprop:Generator_ColumnPropNameInTable="idhosp_lekiColumn" msprop:Generator_UserColumnName="idhosp_leki" type="xs:int" />
@@ -1759,7 +1840,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="lekarze" msprop:Generator_TableClassName="lekarzeDataTable" msprop:Generator_TableVarName="tablelekarze" msprop:Generator_RowChangedName="lekarzeRowChanged" msprop:Generator_TablePropName="lekarze" msprop:Generator_RowDeletingName="lekarzeRowDeleting" msprop:Generator_RowChangingName="lekarzeRowChanging" msprop:Generator_RowEvHandlerName="lekarzeRowChangeEventHandler" msprop:Generator_RowDeletedName="lekarzeRowDeleted" msprop:Generator_RowClassName="lekarzeRow" msprop:Generator_UserTableName="lekarze" msprop:Generator_RowEvArgName="lekarzeRowChangeEvent">
+        <xs:element name="lekarze" msprop:Generator_TableClassName="lekarzeDataTable" msprop:Generator_TableVarName="tablelekarze" msprop:Generator_TablePropName="lekarze" msprop:Generator_RowDeletingName="lekarzeRowDeleting" msprop:Generator_RowChangingName="lekarzeRowChanging" msprop:Generator_RowEvHandlerName="lekarzeRowChangeEventHandler" msprop:Generator_RowDeletedName="lekarzeRowDeleted" msprop:Generator_UserTableName="lekarze" msprop:Generator_RowChangedName="lekarzeRowChanged" msprop:Generator_RowEvArgName="lekarzeRowChangeEvent" msprop:Generator_RowClassName="lekarzeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Lekarz_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLekarz_ID" msprop:Generator_ColumnPropNameInRow="Lekarz_ID" msprop:Generator_ColumnPropNameInTable="Lekarz_IDColumn" msprop:Generator_UserColumnName="Lekarz_ID" type="xs:int" />
@@ -1773,7 +1854,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="badania_laboratoryjne1" msprop:Generator_TableClassName="badania_laboratoryjne1DataTable" msprop:Generator_TableVarName="tablebadania_laboratoryjne1" msprop:Generator_TablePropName="badania_laboratoryjne1" msprop:Generator_RowDeletingName="badania_laboratoryjne1RowDeleting" msprop:Generator_RowChangingName="badania_laboratoryjne1RowChanging" msprop:Generator_RowEvHandlerName="badania_laboratoryjne1RowChangeEventHandler" msprop:Generator_RowDeletedName="badania_laboratoryjne1RowDeleted" msprop:Generator_UserTableName="badania_laboratoryjne1" msprop:Generator_RowChangedName="badania_laboratoryjne1RowChanged" msprop:Generator_RowEvArgName="badania_laboratoryjne1RowChangeEvent" msprop:Generator_RowClassName="badania_laboratoryjne1Row">
+        <xs:element name="badania_laboratoryjne1" msprop:Generator_TableClassName="badania_laboratoryjne1DataTable" msprop:Generator_TableVarName="tablebadania_laboratoryjne1" msprop:Generator_RowChangedName="badania_laboratoryjne1RowChanged" msprop:Generator_TablePropName="badania_laboratoryjne1" msprop:Generator_RowDeletingName="badania_laboratoryjne1RowDeleting" msprop:Generator_RowChangingName="badania_laboratoryjne1RowChanging" msprop:Generator_RowEvHandlerName="badania_laboratoryjne1RowChangeEventHandler" msprop:Generator_RowDeletedName="badania_laboratoryjne1RowDeleted" msprop:Generator_RowClassName="badania_laboratoryjne1Row" msprop:Generator_UserTableName="badania_laboratoryjne1" msprop:Generator_RowEvArgName="badania_laboratoryjne1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="BadanieID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBadanieID" msprop:Generator_ColumnPropNameInRow="BadanieID" msprop:Generator_ColumnPropNameInTable="BadanieIDColumn" msprop:Generator_UserColumnName="BadanieID" type="xs:int" />
@@ -1816,7 +1897,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="elektrokardiogramy1" msprop:Generator_TableClassName="elektrokardiogramy1DataTable" msprop:Generator_TableVarName="tableelektrokardiogramy1" msprop:Generator_TablePropName="elektrokardiogramy1" msprop:Generator_RowDeletingName="elektrokardiogramy1RowDeleting" msprop:Generator_RowChangingName="elektrokardiogramy1RowChanging" msprop:Generator_RowEvHandlerName="elektrokardiogramy1RowChangeEventHandler" msprop:Generator_RowDeletedName="elektrokardiogramy1RowDeleted" msprop:Generator_UserTableName="elektrokardiogramy1" msprop:Generator_RowChangedName="elektrokardiogramy1RowChanged" msprop:Generator_RowEvArgName="elektrokardiogramy1RowChangeEvent" msprop:Generator_RowClassName="elektrokardiogramy1Row">
+        <xs:element name="elektrokardiogramy1" msprop:Generator_TableClassName="elektrokardiogramy1DataTable" msprop:Generator_TableVarName="tableelektrokardiogramy1" msprop:Generator_RowChangedName="elektrokardiogramy1RowChanged" msprop:Generator_TablePropName="elektrokardiogramy1" msprop:Generator_RowDeletingName="elektrokardiogramy1RowDeleting" msprop:Generator_RowChangingName="elektrokardiogramy1RowChanging" msprop:Generator_RowEvHandlerName="elektrokardiogramy1RowChangeEventHandler" msprop:Generator_RowDeletedName="elektrokardiogramy1RowDeleted" msprop:Generator_RowClassName="elektrokardiogramy1Row" msprop:Generator_UserTableName="elektrokardiogramy1" msprop:Generator_RowEvArgName="elektrokardiogramy1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="EkgID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEkgID" msprop:Generator_ColumnPropNameInRow="EkgID" msprop:Generator_ColumnPropNameInTable="EkgIDColumn" msprop:Generator_UserColumnName="EkgID" type="xs:int" />
@@ -1872,7 +1953,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hosp_leki1" msprop:Generator_TableClassName="hosp_leki1DataTable" msprop:Generator_TableVarName="tablehosp_leki1" msprop:Generator_TablePropName="hosp_leki1" msprop:Generator_RowDeletingName="hosp_leki1RowDeleting" msprop:Generator_RowChangingName="hosp_leki1RowChanging" msprop:Generator_RowEvHandlerName="hosp_leki1RowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_leki1RowDeleted" msprop:Generator_UserTableName="hosp_leki1" msprop:Generator_RowChangedName="hosp_leki1RowChanged" msprop:Generator_RowEvArgName="hosp_leki1RowChangeEvent" msprop:Generator_RowClassName="hosp_leki1Row">
+        <xs:element name="hosp_leki1" msprop:Generator_TableClassName="hosp_leki1DataTable" msprop:Generator_TableVarName="tablehosp_leki1" msprop:Generator_RowChangedName="hosp_leki1RowChanged" msprop:Generator_TablePropName="hosp_leki1" msprop:Generator_RowDeletingName="hosp_leki1RowDeleting" msprop:Generator_RowChangingName="hosp_leki1RowChanging" msprop:Generator_RowEvHandlerName="hosp_leki1RowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_leki1RowDeleted" msprop:Generator_RowClassName="hosp_leki1Row" msprop:Generator_UserTableName="hosp_leki1" msprop:Generator_RowEvArgName="hosp_leki1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idhosp_leki" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidhosp_leki" msprop:Generator_ColumnPropNameInRow="idhosp_leki" msprop:Generator_ColumnPropNameInTable="idhosp_lekiColumn" msprop:Generator_UserColumnName="idhosp_leki" type="xs:int" />
@@ -1894,7 +1975,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hosp_rozp1" msprop:Generator_TableClassName="hosp_rozp1DataTable" msprop:Generator_TableVarName="tablehosp_rozp1" msprop:Generator_TablePropName="hosp_rozp1" msprop:Generator_RowDeletingName="hosp_rozp1RowDeleting" msprop:Generator_RowChangingName="hosp_rozp1RowChanging" msprop:Generator_RowEvHandlerName="hosp_rozp1RowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_rozp1RowDeleted" msprop:Generator_UserTableName="hosp_rozp1" msprop:Generator_RowChangedName="hosp_rozp1RowChanged" msprop:Generator_RowEvArgName="hosp_rozp1RowChangeEvent" msprop:Generator_RowClassName="hosp_rozp1Row">
+        <xs:element name="hosp_rozp1" msprop:Generator_TableClassName="hosp_rozp1DataTable" msprop:Generator_TableVarName="tablehosp_rozp1" msprop:Generator_RowChangedName="hosp_rozp1RowChanged" msprop:Generator_TablePropName="hosp_rozp1" msprop:Generator_RowDeletingName="hosp_rozp1RowDeleting" msprop:Generator_RowChangingName="hosp_rozp1RowChanging" msprop:Generator_RowEvHandlerName="hosp_rozp1RowChangeEventHandler" msprop:Generator_RowDeletedName="hosp_rozp1RowDeleted" msprop:Generator_RowClassName="hosp_rozp1Row" msprop:Generator_UserTableName="hosp_rozp1" msprop:Generator_RowEvArgName="hosp_rozp1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Hosp_Rozp_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHosp_Rozp_ID" msprop:Generator_ColumnPropNameInRow="Hosp_Rozp_ID" msprop:Generator_ColumnPropNameInTable="Hosp_Rozp_IDColumn" msprop:Generator_UserColumnName="Hosp_Rozp_ID" type="xs:int" />
@@ -1923,7 +2004,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hospitalizacje1" msprop:Generator_TableClassName="hospitalizacje1DataTable" msprop:Generator_TableVarName="tablehospitalizacje1" msprop:Generator_TablePropName="hospitalizacje1" msprop:Generator_RowDeletingName="hospitalizacje1RowDeleting" msprop:Generator_RowChangingName="hospitalizacje1RowChanging" msprop:Generator_RowEvHandlerName="hospitalizacje1RowChangeEventHandler" msprop:Generator_RowDeletedName="hospitalizacje1RowDeleted" msprop:Generator_UserTableName="hospitalizacje1" msprop:Generator_RowChangedName="hospitalizacje1RowChanged" msprop:Generator_RowEvArgName="hospitalizacje1RowChangeEvent" msprop:Generator_RowClassName="hospitalizacje1Row">
+        <xs:element name="hospitalizacje1" msprop:Generator_TableClassName="hospitalizacje1DataTable" msprop:Generator_TableVarName="tablehospitalizacje1" msprop:Generator_RowChangedName="hospitalizacje1RowChanged" msprop:Generator_TablePropName="hospitalizacje1" msprop:Generator_RowDeletingName="hospitalizacje1RowDeleting" msprop:Generator_RowChangingName="hospitalizacje1RowChanging" msprop:Generator_RowEvHandlerName="hospitalizacje1RowChangeEventHandler" msprop:Generator_RowDeletedName="hospitalizacje1RowDeleted" msprop:Generator_RowClassName="hospitalizacje1Row" msprop:Generator_UserTableName="hospitalizacje1" msprop:Generator_RowEvArgName="hospitalizacje1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NumKg" msprop:Generator_ColumnVarNameInTable="columnNumKg" msprop:Generator_ColumnPropNameInRow="NumKg" msprop:Generator_ColumnPropNameInTable="NumKgColumn" msprop:Generator_UserColumnName="NumKg">
@@ -1950,7 +2031,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="lekarze1" msprop:Generator_TableClassName="lekarze1DataTable" msprop:Generator_TableVarName="tablelekarze1" msprop:Generator_TablePropName="lekarze1" msprop:Generator_RowDeletingName="lekarze1RowDeleting" msprop:Generator_RowChangingName="lekarze1RowChanging" msprop:Generator_RowEvHandlerName="lekarze1RowChangeEventHandler" msprop:Generator_RowDeletedName="lekarze1RowDeleted" msprop:Generator_UserTableName="lekarze1" msprop:Generator_RowChangedName="lekarze1RowChanged" msprop:Generator_RowEvArgName="lekarze1RowChangeEvent" msprop:Generator_RowClassName="lekarze1Row">
+        <xs:element name="lekarze1" msprop:Generator_TableClassName="lekarze1DataTable" msprop:Generator_TableVarName="tablelekarze1" msprop:Generator_RowChangedName="lekarze1RowChanged" msprop:Generator_TablePropName="lekarze1" msprop:Generator_RowDeletingName="lekarze1RowDeleting" msprop:Generator_RowChangingName="lekarze1RowChanging" msprop:Generator_RowEvHandlerName="lekarze1RowChangeEventHandler" msprop:Generator_RowDeletedName="lekarze1RowDeleted" msprop:Generator_RowClassName="lekarze1Row" msprop:Generator_UserTableName="lekarze1" msprop:Generator_RowEvArgName="lekarze1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Lekarz_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLekarz_ID" msprop:Generator_ColumnPropNameInRow="Lekarz_ID" msprop:Generator_ColumnPropNameInTable="Lekarz_IDColumn" msprop:Generator_UserColumnName="Lekarz_ID" type="xs:int" />
@@ -1964,7 +2045,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="leki" msprop:Generator_TableClassName="lekiDataTable" msprop:Generator_TableVarName="tableleki" msprop:Generator_TablePropName="leki" msprop:Generator_RowDeletingName="lekiRowDeleting" msprop:Generator_RowChangingName="lekiRowChanging" msprop:Generator_RowEvHandlerName="lekiRowChangeEventHandler" msprop:Generator_RowDeletedName="lekiRowDeleted" msprop:Generator_UserTableName="leki" msprop:Generator_RowChangedName="lekiRowChanged" msprop:Generator_RowEvArgName="lekiRowChangeEvent" msprop:Generator_RowClassName="lekiRow">
+        <xs:element name="leki" msprop:Generator_TableClassName="lekiDataTable" msprop:Generator_TableVarName="tableleki" msprop:Generator_RowChangedName="lekiRowChanged" msprop:Generator_TablePropName="leki" msprop:Generator_RowDeletingName="lekiRowDeleting" msprop:Generator_RowChangingName="lekiRowChanging" msprop:Generator_RowEvHandlerName="lekiRowChangeEventHandler" msprop:Generator_RowDeletedName="lekiRowDeleted" msprop:Generator_RowClassName="lekiRow" msprop:Generator_UserTableName="leki" msprop:Generator_RowEvArgName="lekiRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Lek_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnLek_ID" msprop:Generator_ColumnPropNameInRow="Lek_ID" msprop:Generator_ColumnPropNameInTable="Lek_IDColumn" msprop:Generator_UserColumnName="Lek_ID" type="xs:int" />
@@ -2020,7 +2101,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="pacjenci1" msprop:Generator_TableClassName="pacjenci1DataTable" msprop:Generator_TableVarName="tablepacjenci1" msprop:Generator_TablePropName="pacjenci1" msprop:Generator_RowDeletingName="pacjenci1RowDeleting" msprop:Generator_RowChangingName="pacjenci1RowChanging" msprop:Generator_RowEvHandlerName="pacjenci1RowChangeEventHandler" msprop:Generator_RowDeletedName="pacjenci1RowDeleted" msprop:Generator_UserTableName="pacjenci1" msprop:Generator_RowChangedName="pacjenci1RowChanged" msprop:Generator_RowEvArgName="pacjenci1RowChangeEvent" msprop:Generator_RowClassName="pacjenci1Row">
+        <xs:element name="pacjenci1" msprop:Generator_TableClassName="pacjenci1DataTable" msprop:Generator_TableVarName="tablepacjenci1" msprop:Generator_RowChangedName="pacjenci1RowChanged" msprop:Generator_TablePropName="pacjenci1" msprop:Generator_RowDeletingName="pacjenci1RowDeleting" msprop:Generator_RowChangingName="pacjenci1RowChanging" msprop:Generator_RowEvHandlerName="pacjenci1RowChangeEventHandler" msprop:Generator_RowDeletedName="pacjenci1RowDeleted" msprop:Generator_RowClassName="pacjenci1Row" msprop:Generator_UserTableName="pacjenci1" msprop:Generator_RowEvArgName="pacjenci1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PESEL" msprop:Generator_ColumnVarNameInTable="columnPESEL" msprop:Generator_ColumnPropNameInRow="PESEL" msprop:Generator_ColumnPropNameInTable="PESELColumn" msprop:Generator_UserColumnName="PESEL">
@@ -2082,7 +2163,7 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="rozpoznania1" msprop:Generator_TableClassName="rozpoznania1DataTable" msprop:Generator_TableVarName="tablerozpoznania1" msprop:Generator_TablePropName="rozpoznania1" msprop:Generator_RowDeletingName="rozpoznania1RowDeleting" msprop:Generator_RowChangingName="rozpoznania1RowChanging" msprop:Generator_RowEvHandlerName="rozpoznania1RowChangeEventHandler" msprop:Generator_RowDeletedName="rozpoznania1RowDeleted" msprop:Generator_UserTableName="rozpoznania1" msprop:Generator_RowChangedName="rozpoznania1RowChanged" msprop:Generator_RowEvArgName="rozpoznania1RowChangeEvent" msprop:Generator_RowClassName="rozpoznania1Row">
+        <xs:element name="rozpoznania1" msprop:Generator_TableClassName="rozpoznania1DataTable" msprop:Generator_TableVarName="tablerozpoznania1" msprop:Generator_RowChangedName="rozpoznania1RowChanged" msprop:Generator_TablePropName="rozpoznania1" msprop:Generator_RowDeletingName="rozpoznania1RowDeleting" msprop:Generator_RowChangingName="rozpoznania1RowChanging" msprop:Generator_RowEvHandlerName="rozpoznania1RowChangeEventHandler" msprop:Generator_RowDeletedName="rozpoznania1RowDeleted" msprop:Generator_RowClassName="rozpoznania1Row" msprop:Generator_UserTableName="rozpoznania1" msprop:Generator_RowEvArgName="rozpoznania1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Rozp_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnRozp_ID" msprop:Generator_ColumnPropNameInRow="Rozp_ID" msprop:Generator_ColumnPropNameInTable="Rozp_IDColumn" msprop:Generator_UserColumnName="Rozp_ID" type="xs:int" />
@@ -2107,6 +2188,41 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="biezace" msprop:Generator_TableClassName="biezaceDataTable" msprop:Generator_TableVarName="tablebiezace" msprop:Generator_TablePropName="biezace" msprop:Generator_RowDeletingName="biezaceRowDeleting" msprop:Generator_RowChangingName="biezaceRowChanging" msprop:Generator_RowEvHandlerName="biezaceRowChangeEventHandler" msprop:Generator_RowDeletedName="biezaceRowDeleted" msprop:Generator_UserTableName="biezace" msprop:Generator_RowChangedName="biezaceRowChanged" msprop:Generator_RowEvArgName="biezaceRowChangeEvent" msprop:Generator_RowClassName="biezaceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="imie_i_nazwisko" msprop:Generator_ColumnVarNameInTable="columnimie_i_nazwisko" msprop:Generator_ColumnPropNameInRow="imie_i_nazwisko" msprop:Generator_ColumnPropNameInTable="imie_i_nazwiskoColumn" msprop:Generator_UserColumnName="imie_i_nazwisko" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="511" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumKg" msprop:Generator_ColumnVarNameInTable="columnNumKg" msprop:Generator_ColumnPropNameInRow="NumKg" msprop:Generator_ColumnPropNameInTable="NumKgColumn" msprop:Generator_UserColumnName="NumKg" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="biezace_wypisy" msprop:Generator_TableClassName="biezace_wypisyDataTable" msprop:Generator_TableVarName="tablebiezace_wypisy" msprop:Generator_TablePropName="biezace_wypisy" msprop:Generator_RowDeletingName="biezace_wypisyRowDeleting" msprop:Generator_RowChangingName="biezace_wypisyRowChanging" msprop:Generator_RowEvHandlerName="biezace_wypisyRowChangeEventHandler" msprop:Generator_RowDeletedName="biezace_wypisyRowDeleted" msprop:Generator_UserTableName="biezace_wypisy" msprop:Generator_RowChangedName="biezace_wypisyRowChanged" msprop:Generator_RowEvArgName="biezace_wypisyRowChangeEvent" msprop:Generator_RowClassName="biezace_wypisyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wyp_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnwyp_id" msprop:Generator_ColumnPropNameInRow="wyp_id" msprop:Generator_ColumnPropNameInTable="wyp_idColumn" msprop:Generator_UserColumnName="wyp_id" type="xs:int" />
+              <xs:element name="NumKg" msprop:Generator_ColumnVarNameInTable="columnNumKg" msprop:Generator_ColumnPropNameInRow="NumKg" msprop:Generator_ColumnPropNameInTable="NumKgColumn" msprop:Generator_UserColumnName="NumKg">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_dodania" msprop:Generator_ColumnVarNameInTable="columndata_dodania" msprop:Generator_ColumnPropNameInRow="data_dodania" msprop:Generator_ColumnPropNameInTable="data_dodaniaColumn" msprop:Generator_UserColumnName="data_dodania" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -2180,23 +2296,31 @@ WHERE (`NumKg` =  @NumKg)</CommandText>
       <xs:selector xpath=".//mstns:rozpoznania1" />
       <xs:field xpath="mstns:Rozp_ID" />
     </xs:unique>
+    <xs:unique name="biezace_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:biezace" />
+      <xs:field xpath="mstns:NumKg" />
+    </xs:unique>
+    <xs:unique name="biezace_wypisy_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:biezace_wypisy" />
+      <xs:field xpath="mstns:wyp_id" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="HospitalizacjeHosp_Rozp" msdata:parent="hospitalizacje" msdata:child="hosp_rozp" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="HospitalizacjeHosp_Rozp" msprop:Generator_ParentPropName="hospitalizacjeRow" msprop:Generator_RelationVarName="relationHospitalizacjeHosp_Rozp" msprop:Generator_UserParentTable="hospitalizacje" />
-      <msdata:Relationship name="RozpoznaniaHosp_Rozp" msdata:parent="rozpoznania" msdata:child="hosp_rozp" msdata:parentkey="Rozp_ID" msdata:childkey="Rozp_ID" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="RozpoznaniaHosp_Rozp" msprop:Generator_ParentPropName="rozpoznaniaRow" msprop:Generator_RelationVarName="relationRozpoznaniaHosp_Rozp" msprop:Generator_UserParentTable="rozpoznania" />
-      <msdata:Relationship name="PacjenciHospitalizacje" msdata:parent="pacjenci" msdata:child="hospitalizacje" msdata:parentkey="PESEL" msdata:childkey="PESEL_Pacjenta" msprop:Generator_UserChildTable="hospitalizacje" msprop:Generator_ChildPropName="GethospitalizacjeRows" msprop:Generator_UserRelationName="PacjenciHospitalizacje" msprop:Generator_RelationVarName="relationPacjenciHospitalizacje" msprop:Generator_UserParentTable="pacjenci" msprop:Generator_ParentPropName="pacjenciRow" />
-      <msdata:Relationship name="badania_laboratoryjne_hospitalizacje" msdata:parent="badania_laboratoryjne" msdata:child="hospitalizacje" msdata:parentkey="NumKg" msdata:childkey="NumKg" msprop:Generator_UserChildTable="hospitalizacje" msprop:Generator_ChildPropName="GethospitalizacjeRows" msprop:Generator_UserRelationName="badania_laboratoryjne_hospitalizacje" msprop:Generator_ParentPropName="badania_laboratoryjneRow" msprop:Generator_RelationVarName="relationbadania_laboratoryjne_hospitalizacje" msprop:Generator_UserParentTable="badania_laboratoryjne" />
-      <msdata:Relationship name="PacjenciBadania_Laboratoryjne" msdata:parent="pacjenci" msdata:child="badania_laboratoryjne" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="badania_laboratoryjne" msprop:Generator_ChildPropName="Getbadania_laboratoryjneRows" msprop:Generator_UserRelationName="PacjenciBadania_Laboratoryjne" msprop:Generator_RelationVarName="relationPacjenciBadania_Laboratoryjne" msprop:Generator_UserParentTable="pacjenci" msprop:Generator_ParentPropName="pacjenciRow" />
-      <msdata:Relationship name="NumKG" msdata:parent="hospitalizacje" msdata:child="hosp_leki" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_leki" msprop:Generator_ChildPropName="Gethosp_lekiRows" msprop:Generator_UserRelationName="NumKG" msprop:Generator_RelationVarName="relationNumKG" msprop:Generator_UserParentTable="hospitalizacje" msprop:Generator_ParentPropName="hospitalizacjeRow" />
-      <msdata:Relationship name="PacjenciHosp_Rozp" msdata:parent="pacjenci" msdata:child="hosp_rozp" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="PacjenciHosp_Rozp" msprop:Generator_RelationVarName="relationPacjenciHosp_Rozp" msprop:Generator_UserParentTable="pacjenci" msprop:Generator_ParentPropName="pacjenciRow" />
-      <msdata:Relationship name="PacjenciBadania_Laboratoryjne1" msdata:parent="pacjenci1" msdata:child="badania_laboratoryjne1" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="badania_laboratoryjne1" msprop:Generator_ChildPropName="Getbadania_laboratoryjne1Rows" msprop:Generator_UserRelationName="PacjenciBadania_Laboratoryjne1" msprop:Generator_RelationVarName="relationPacjenciBadania_Laboratoryjne1" msprop:Generator_UserParentTable="pacjenci1" msprop:Generator_ParentPropName="pacjenci1Row" />
-      <msdata:Relationship name="Lek_ID" msdata:parent="leki" msdata:child="hosp_leki1" msdata:parentkey="Lek_ID" msdata:childkey="Lek_ID" msprop:Generator_UserChildTable="hosp_leki1" msprop:Generator_ChildPropName="Gethosp_leki1Rows" msprop:Generator_UserRelationName="Lek_ID" msprop:Generator_RelationVarName="relationLek_ID" msprop:Generator_UserParentTable="leki" msprop:Generator_ParentPropName="lekiRow" />
-      <msdata:Relationship name="NumKG1" msdata:parent="hospitalizacje1" msdata:child="hosp_leki1" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_leki1" msprop:Generator_ChildPropName="Gethosp_leki1Rows" msprop:Generator_UserRelationName="NumKG1" msprop:Generator_RelationVarName="relationNumKG1" msprop:Generator_UserParentTable="hospitalizacje1" msprop:Generator_ParentPropName="hospitalizacje1Row" />
-      <msdata:Relationship name="HospitalizacjeHosp_Rozp1" msdata:parent="hospitalizacje1" msdata:child="hosp_rozp1" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_rozp1" msprop:Generator_ChildPropName="Gethosp_rozp1Rows" msprop:Generator_UserRelationName="HospitalizacjeHosp_Rozp1" msprop:Generator_RelationVarName="relationHospitalizacjeHosp_Rozp1" msprop:Generator_UserParentTable="hospitalizacje1" msprop:Generator_ParentPropName="hospitalizacje1Row" />
-      <msdata:Relationship name="PacjenciHosp_Rozp1" msdata:parent="pacjenci1" msdata:child="hosp_rozp1" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="hosp_rozp1" msprop:Generator_ChildPropName="Gethosp_rozp1Rows" msprop:Generator_UserRelationName="PacjenciHosp_Rozp1" msprop:Generator_RelationVarName="relationPacjenciHosp_Rozp1" msprop:Generator_UserParentTable="pacjenci1" msprop:Generator_ParentPropName="pacjenci1Row" />
-      <msdata:Relationship name="Hosp_Lek_ID" msdata:parent="lekarze1" msdata:child="hospitalizacje1" msdata:parentkey="Lekarz_ID" msdata:childkey="Lekarz_ID" msprop:Generator_UserChildTable="hospitalizacje1" msprop:Generator_ChildPropName="Gethospitalizacje1Rows" msprop:Generator_UserRelationName="Hosp_Lek_ID" msprop:Generator_RelationVarName="relationHosp_Lek_ID" msprop:Generator_UserParentTable="lekarze1" msprop:Generator_ParentPropName="lekarze1Row" />
-      <msdata:Relationship name="PacjenciHospitalizacje1" msdata:parent="pacjenci1" msdata:child="hospitalizacje1" msdata:parentkey="PESEL" msdata:childkey="PESEL_Pacjenta" msprop:Generator_UserChildTable="hospitalizacje1" msprop:Generator_ChildPropName="Gethospitalizacje1Rows" msprop:Generator_UserRelationName="PacjenciHospitalizacje1" msprop:Generator_RelationVarName="relationPacjenciHospitalizacje1" msprop:Generator_UserParentTable="pacjenci1" msprop:Generator_ParentPropName="pacjenci1Row" />
+      <msdata:Relationship name="HospitalizacjeHosp_Rozp" msdata:parent="hospitalizacje" msdata:child="hosp_rozp" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="HospitalizacjeHosp_Rozp" msprop:Generator_RelationVarName="relationHospitalizacjeHosp_Rozp" msprop:Generator_UserParentTable="hospitalizacje" msprop:Generator_ParentPropName="hospitalizacjeRow" />
+      <msdata:Relationship name="RozpoznaniaHosp_Rozp" msdata:parent="rozpoznania" msdata:child="hosp_rozp" msdata:parentkey="Rozp_ID" msdata:childkey="Rozp_ID" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="RozpoznaniaHosp_Rozp" msprop:Generator_RelationVarName="relationRozpoznaniaHosp_Rozp" msprop:Generator_UserParentTable="rozpoznania" msprop:Generator_ParentPropName="rozpoznaniaRow" />
+      <msdata:Relationship name="PacjenciHospitalizacje" msdata:parent="pacjenci" msdata:child="hospitalizacje" msdata:parentkey="PESEL" msdata:childkey="PESEL_Pacjenta" msprop:Generator_UserChildTable="hospitalizacje" msprop:Generator_ChildPropName="GethospitalizacjeRows" msprop:Generator_UserRelationName="PacjenciHospitalizacje" msprop:Generator_ParentPropName="pacjenciRow" msprop:Generator_RelationVarName="relationPacjenciHospitalizacje" msprop:Generator_UserParentTable="pacjenci" />
+      <msdata:Relationship name="badania_laboratoryjne_hospitalizacje" msdata:parent="badania_laboratoryjne" msdata:child="hospitalizacje" msdata:parentkey="NumKg" msdata:childkey="NumKg" msprop:Generator_UserChildTable="hospitalizacje" msprop:Generator_ChildPropName="GethospitalizacjeRows" msprop:Generator_UserRelationName="badania_laboratoryjne_hospitalizacje" msprop:Generator_RelationVarName="relationbadania_laboratoryjne_hospitalizacje" msprop:Generator_UserParentTable="badania_laboratoryjne" msprop:Generator_ParentPropName="badania_laboratoryjneRow" />
+      <msdata:Relationship name="PacjenciBadania_Laboratoryjne" msdata:parent="pacjenci" msdata:child="badania_laboratoryjne" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="badania_laboratoryjne" msprop:Generator_ChildPropName="Getbadania_laboratoryjneRows" msprop:Generator_UserRelationName="PacjenciBadania_Laboratoryjne" msprop:Generator_ParentPropName="pacjenciRow" msprop:Generator_RelationVarName="relationPacjenciBadania_Laboratoryjne" msprop:Generator_UserParentTable="pacjenci" />
+      <msdata:Relationship name="NumKG" msdata:parent="hospitalizacje" msdata:child="hosp_leki" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_leki" msprop:Generator_ChildPropName="Gethosp_lekiRows" msprop:Generator_UserRelationName="NumKG" msprop:Generator_ParentPropName="hospitalizacjeRow" msprop:Generator_RelationVarName="relationNumKG" msprop:Generator_UserParentTable="hospitalizacje" />
+      <msdata:Relationship name="PacjenciHosp_Rozp" msdata:parent="pacjenci" msdata:child="hosp_rozp" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="hosp_rozp" msprop:Generator_ChildPropName="Gethosp_rozpRows" msprop:Generator_UserRelationName="PacjenciHosp_Rozp" msprop:Generator_ParentPropName="pacjenciRow" msprop:Generator_RelationVarName="relationPacjenciHosp_Rozp" msprop:Generator_UserParentTable="pacjenci" />
+      <msdata:Relationship name="PacjenciBadania_Laboratoryjne1" msdata:parent="pacjenci1" msdata:child="badania_laboratoryjne1" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="badania_laboratoryjne1" msprop:Generator_ChildPropName="Getbadania_laboratoryjne1Rows" msprop:Generator_UserRelationName="PacjenciBadania_Laboratoryjne1" msprop:Generator_ParentPropName="pacjenci1Row" msprop:Generator_RelationVarName="relationPacjenciBadania_Laboratoryjne1" msprop:Generator_UserParentTable="pacjenci1" />
+      <msdata:Relationship name="Lek_ID" msdata:parent="leki" msdata:child="hosp_leki1" msdata:parentkey="Lek_ID" msdata:childkey="Lek_ID" msprop:Generator_UserChildTable="hosp_leki1" msprop:Generator_ChildPropName="Gethosp_leki1Rows" msprop:Generator_UserRelationName="Lek_ID" msprop:Generator_ParentPropName="lekiRow" msprop:Generator_RelationVarName="relationLek_ID" msprop:Generator_UserParentTable="leki" />
+      <msdata:Relationship name="NumKG1" msdata:parent="hospitalizacje1" msdata:child="hosp_leki1" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_leki1" msprop:Generator_ChildPropName="Gethosp_leki1Rows" msprop:Generator_UserRelationName="NumKG1" msprop:Generator_ParentPropName="hospitalizacje1Row" msprop:Generator_RelationVarName="relationNumKG1" msprop:Generator_UserParentTable="hospitalizacje1" />
+      <msdata:Relationship name="HospitalizacjeHosp_Rozp1" msdata:parent="hospitalizacje1" msdata:child="hosp_rozp1" msdata:parentkey="NumKg" msdata:childkey="NumKG" msprop:Generator_UserChildTable="hosp_rozp1" msprop:Generator_ChildPropName="Gethosp_rozp1Rows" msprop:Generator_UserRelationName="HospitalizacjeHosp_Rozp1" msprop:Generator_ParentPropName="hospitalizacje1Row" msprop:Generator_RelationVarName="relationHospitalizacjeHosp_Rozp1" msprop:Generator_UserParentTable="hospitalizacje1" />
+      <msdata:Relationship name="PacjenciHosp_Rozp1" msdata:parent="pacjenci1" msdata:child="hosp_rozp1" msdata:parentkey="PESEL" msdata:childkey="PESEL" msprop:Generator_UserChildTable="hosp_rozp1" msprop:Generator_ChildPropName="Gethosp_rozp1Rows" msprop:Generator_UserRelationName="PacjenciHosp_Rozp1" msprop:Generator_ParentPropName="pacjenci1Row" msprop:Generator_RelationVarName="relationPacjenciHosp_Rozp1" msprop:Generator_UserParentTable="pacjenci1" />
+      <msdata:Relationship name="Hosp_Lek_ID" msdata:parent="lekarze1" msdata:child="hospitalizacje1" msdata:parentkey="Lekarz_ID" msdata:childkey="Lekarz_ID" msprop:Generator_UserChildTable="hospitalizacje1" msprop:Generator_ChildPropName="Gethospitalizacje1Rows" msprop:Generator_UserRelationName="Hosp_Lek_ID" msprop:Generator_ParentPropName="lekarze1Row" msprop:Generator_RelationVarName="relationHosp_Lek_ID" msprop:Generator_UserParentTable="lekarze1" />
+      <msdata:Relationship name="PacjenciHospitalizacje1" msdata:parent="pacjenci1" msdata:child="hospitalizacje1" msdata:parentkey="PESEL" msdata:childkey="PESEL_Pacjenta" msprop:Generator_UserChildTable="hospitalizacje1" msprop:Generator_ChildPropName="Gethospitalizacje1Rows" msprop:Generator_UserRelationName="PacjenciHospitalizacje1" msprop:Generator_ParentPropName="pacjenci1Row" msprop:Generator_RelationVarName="relationPacjenciHospitalizacje1" msprop:Generator_UserParentTable="pacjenci1" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="rtfapp.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="rtfapp.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="rtfapp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,24 +54,108 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="rtfapp.exe" size="159208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="rtfapp.exe" size="505320">
       <assemblyIdentity name="rtfapp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2XXbPn56KC6A03ueAyxiBqJBwUs395Amo1lSvAuwhzQ=</dsig:DigestValue>
+        <dsig:DigestValue>rryhzD5+xdXQaJ90OUfmDaMwUuK80l7bILUTzEqN8GA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="rtfapp.exe.config" size="1681">
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TXDrawing.dll" size="145408">
+      <assemblyIdentity name="TXDrawing" version="24.0.200.500" publicKeyToken="6B83FE9A75CFB638" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NhMOMrKk+XdDNNUuYfUVPMcmCHpEIFFhosk2Y32f3EA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\TXDrawing.resources.dll" size="12800">
+      <assemblyIdentity name="TXDrawing.resources" version="24.0.200.500" publicKeyToken="6B83FE9A75CFB638" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T8daRQwEj4Is3GCtBd+8JfwQDatDQGG2KWtYaOXEi14=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TXDrawing.Windows.Forms.dll" size="443904">
+      <assemblyIdentity name="TXDrawing.Windows.Forms" version="24.0.200.500" publicKeyToken="6B83FE9A75CFB638" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>B4sWvWpK6VU44ZP9Athz8J100cmmGh6md1pOt/aC9SE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TXTextControl.dll" size="563200">
+      <assemblyIdentity name="TXTextControl" version="24.0.1700.500" publicKeyToken="6B83FE9A75CFB638" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NNyjigMtULOl9uyv3XcsYIhcEYgXCVgpCweKALN5W4g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\TXTextControl.resources.dll" size="180224">
+      <assemblyIdentity name="TXTextControl.resources" version="24.0.1700.500" publicKeyToken="6B83FE9A75CFB638" language="de" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vcM06zxRhtjG6UxGtPbJiSCDOqiABA/M9bs2PCmVGu0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TXTextControl.Server.dll" size="109056">
+      <assemblyIdentity name="TXTextControl.Server" version="24.0.900.500" publicKeyToken="6B83FE9A75CFB638" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UV0NxwBh3M7RpFtEcWNkA9ahTCr7KovCuFY2mfJYTj8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TXTextControl.Windows.Forms.dll" size="1707008">
+      <assemblyIdentity name="TXTextControl.Windows.Forms" version="24.0.900.500" publicKeyToken="6B83FE9A75CFB638" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7GGZmkKp2DKHdlgIr2HCMNHHCkF6tTAEAHZynXjUtlY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="rtfapp.exe.config" size="1784">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0OSM3ICdFPwyTQO0QUhiSbONB9czEc0H/GO+hyOmmzo=</dsig:DigestValue>
+      <dsig:DigestValue>2Bcsbt9M743BotQPzxUv6qpdgABlRXo5AOCQdmiwEh0=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -28,6 +28,10 @@ namespace rtfapp
         private BazaDataSet.rozpoznaniaDataTable TabelaRozpoznania;
         private BazaDataSet.lekiDataTable TabelaLeki;
         private BazaDataSet.lekarzeDataTable TabelaLekarze;
+        
+        private BazaDataSet.biezaceDataTable BiezaceViewDT;
+        private BazaDataSetTableAdapters.biezace_wypisyTableAdapter BiezaceWypisyTableAdapter;
+        private BazaDataSetTableAdapters.biezaceTableAdapter BiezaceViewTableAdapter;
         //private BazaDataSetTableAdapters.lekarzeTableAdapter lekarzeTableAdapter;
         private  string sciezkapliku;
         
@@ -51,6 +55,10 @@ namespace rtfapp
             this.BiezacyWypis = new Wypis();
             TabelaRozpoznania = new BazaDataSet.rozpoznaniaDataTable();
             TabelaLeki = new BazaDataSet.lekiDataTable();
+
+            BiezaceViewDT = new BazaDataSet.biezaceDataTable();
+            BiezaceViewTableAdapter = new BazaDataSetTableAdapters.biezaceTableAdapter();
+            BiezaceWypisyTableAdapter = new BazaDataSetTableAdapters.biezace_wypisyTableAdapter();
             sciezkapliku = sciezka;
             
             
@@ -66,6 +74,9 @@ namespace rtfapp
               wyborlekarzacomboBox.Items.Add(LekarzRow.Nazwa);
               echoControl1.DodajLekarzaDoListy(LekarzRow.Nazwa);
             }
+
+            ZakutalizujWidokBiezacychWypisow();
+          
 
 
             textControl.ButtonBar = buttonBar;
@@ -137,16 +148,11 @@ namespace rtfapp
   
            
 
-             BiezacyWypis.CzytajRegEx(textControl.Text); 
-           
-            
-            
-            // nowy obiekt wypis, w tej wersji porgramu nie ma mozliwosci na razie wiekszej ilosci takich obiektow
-            //BiezacyWypis.PlikRtf = richTextBoxBiezacyWypis.Rtf;  // obiekt wypis musi mieć swoj wlasny plik rtf
-            // BiezacyWypis.UtworzZaczepy(); //znaleznienie miejsc na rozpoznania, ekg, leki itp
-            //BiezacyWypis.ListaLek = new ListaLekow(dataGridViewLeki);
-            // ZaktualizujWidokWypisu();
+             BiezacyWypis.CzytajRegEx(textControl.Text);
 
+            //dodanie wypisu do listy aktualnych wypisów
+            BiezaceWypisyTableAdapter.InsertQuery(BiezacyWypis.NumKg, DateTime.Now);
+            
 
          
             this.pESELTextBox.Text = BiezacyWypis.Pesel;
@@ -505,7 +511,23 @@ namespace rtfapp
 
 
 
+        public void ZakutalizujWidokBiezacychWypisow()
+        {
+            BiezaceViewDT = BiezaceViewTableAdapter.GetData();
 
+
+            foreach (BazaDataSet.biezaceRow BW in BiezaceViewDT.Rows)
+            {
+                // ListBox.ObjectCollection obc;
+                // obc = new ListBox.ObjectCollection(listBoxWypisy);
+                //obc.
+
+                listBoxWypisy.Items.Add(BW.imie_i_nazwisko);
+            }
+
+
+
+        }
 
 
 
@@ -897,6 +919,27 @@ namespace rtfapp
         private void OknoWypisu_Validated(object sender, EventArgs e)
         {
            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_MouseHover(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void listBoxWypisy_MouseLeave(object sender, EventArgs e)
+        {
+            listBoxWypisy.Height = 69;
+        }
+
+        private void listBoxWypisy_MouseHover(object sender, EventArgs e)
+        {
+            listBoxWypisy.Height = 693;
+            //ZakutalizujWidokBiezacychWypisow();
         }
     }
 }

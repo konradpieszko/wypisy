@@ -18,5 +18,21 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">server=172.16.2.46;user id=Konrad;password=rock6699LIS@;persistsecurityinfo=True;database="bazapacjentow v2"</Value>
     </Setting>
+    <Setting Name="bazapacjentow_v2ConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database="bazapacjentow v2"&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database="bazapacjentow v2"</Value>
+    </Setting>
+    <Setting Name="bazapacjentow_v2ConnectionString2" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database="bazapacjentow v2";allowuservariables=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database="bazapacjentow v2";allowuservariables=True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

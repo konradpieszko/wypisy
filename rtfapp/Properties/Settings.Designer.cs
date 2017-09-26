@@ -44,5 +44,27 @@ namespace rtfapp.Properties {
                 return ((string)(this["bazapacjentow_v2ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database=\"bazapacjento" +
+            "w v2\"")]
+        public string bazapacjentow_v2ConnectionString1 {
+            get {
+                return ((string)(this["bazapacjentow_v2ConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database=\"bazapacjento" +
+            "w v2\";allowuservariables=True")]
+        public string bazapacjentow_v2ConnectionString2 {
+            get {
+                return ((string)(this["bazapacjentow_v2ConnectionString2"]));
+            }
+        }
     }
 }

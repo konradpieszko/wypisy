@@ -93,7 +93,7 @@
     <Compile Include="BazaDataSet.cs">
       <DependentUpon>BazaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BazaDataSet1.Designer.cs">
+    <Compile Include="BazaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BazaDataSet.xsd</DependentUpon>
@@ -151,7 +151,7 @@
     <None Include="BazaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>BazaDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>BazaDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="BazaDataSet.xss">
       <DependentUpon>BazaDataSet.xsd</DependentUpon>
