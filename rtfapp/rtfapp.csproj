@@ -23,7 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>7</ApplicationRevision>
+    <UpdateUrl>http://localhost/rtfapp/</UpdateUrl>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -121,6 +122,7 @@
     <Compile Include="Lek.cs" />
     <Compile Include="ListaEKG.cs" />
     <Compile Include="ListaLekow.cs" />
+    <Compile Include="ListaWypisow.cs" />
     <Compile Include="Procedura.cs" />
     <Compile Include="Rozpoznanie.cs" />
     <Compile Include="Wydruk.cs" />

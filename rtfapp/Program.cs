@@ -28,12 +28,12 @@ namespace rtfapp
             if (args.Count() > 1)
             {
                 NoweOknoWypisu = new OknoWypisu(args[1]);
-                
+               // MessageBox.Show(args[1]);
                 
                 NoweOknoWypisu.Show();
                 NoweOknoWypisu.ZaladujWypis();
                 
-                Console.Write(NoweOknoWypisu.Potwierdzenie());
+                //Console.Write(NoweOknoWypisu.Potwierdzenie());
                 Application.Exit();
 
 

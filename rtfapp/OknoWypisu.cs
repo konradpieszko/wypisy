@@ -95,20 +95,12 @@ namespace rtfapp
 
 
 
-        public string Potwierdzenie()
-        {
-
-            return "Zaladowano do bazy Wypis pacjenta: " +
-                                 BiezacyWypis.Nazwisko + " " +
-                                 BiezacyWypis.Imie + " \n" +
-                                 "Numer Księgi głównej: " +
-                                 BiezacyWypis.NumKg;
-        }
+       
 
         private void OknoWypisu_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bazaDataSet.elektrokardiogramy' table. You can move, or remove it, as needed.
-            this.elektrokardiogramyTableAdapter.Fill(this.bazaDataSet.elektrokardiogramy);
+            //this.elektrokardiogramyTableAdapter.Fill(this.bazaDataSet.elektrokardiogramy);
             // TODO: This line of code loads data into the 'bazaDataSet.lekarze' table. You can move, or remove it, as needed.
             this.lekarzeTableAdapter.Fill(this.bazaDataSet.lekarze);
             // TODO: This line of code loads data into the 'bazaDataSet.rozpoznania' table. You can move, or remove it, as needed.
@@ -161,7 +153,7 @@ namespace rtfapp
             this.numKgTextBox.Text = BiezacyWypis.NumKg;
 
 
-
+            
  
             try
             {
@@ -258,9 +250,9 @@ namespace rtfapp
             //itd
             //TU SKONCZYLEM
 
+            // byte[] BinaryFile;
 
-
-
+          // textControl.Save
             ZaktualizujWidokWypisu();
         }
 
@@ -515,7 +507,7 @@ namespace rtfapp
         {
             BiezaceViewDT = BiezaceViewTableAdapter.GetData();
 
-
+            listBoxWypisy.Items.Clear();
             foreach (BazaDataSet.biezaceRow BW in BiezaceViewDT.Rows)
             {
                 // ListBox.ObjectCollection obc;
@@ -940,6 +932,16 @@ namespace rtfapp
         {
             listBoxWypisy.Height = 693;
             //ZakutalizujWidokBiezacychWypisow();
+        }
+
+        private void RefreshTimer_Tick(object sender, EventArgs e)
+        {
+            ZakutalizujWidokBiezacychWypisow();
+        }
+
+        private void listBoxWypisy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

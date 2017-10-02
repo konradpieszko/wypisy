@@ -89,8 +89,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.badania_laboratoryjneDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.badania_laboratoryjneBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaDataSet = new rtfapp.BazaDataSet();
             this.PrzyciskLadowaniaWypisu = new System.Windows.Forms.Button();
             this.pESELTextBox = new System.Windows.Forms.TextBox();
+            this.pacjenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.imieTextBox = new System.Windows.Forms.TextBox();
             this.nazwiskoTextBox = new System.Windows.Forms.TextBox();
             this.numKgTextBox = new System.Windows.Forms.TextBox();
@@ -104,18 +110,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textControl = new TXTextControl.TextControl();
-            this.serverTextControl1 = new TXTextControl.ServerTextControl();
             this.buttonBar = new TXTextControl.ButtonBar();
             this.button1 = new System.Windows.Forms.Button();
+            this.serverTextControl1 = new TXTextControl.ServerTextControl();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.badania_laboratoryjneBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bazaDataSet = new rtfapp.BazaDataSet();
-            this.pacjenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.elektrokardiogramyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hosp_rozpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pacjenciTableAdapter = new rtfapp.BazaDataSetTableAdapters.pacjenciTableAdapter();
@@ -130,8 +130,9 @@
             this.elektrokardiogramyTableAdapter = new rtfapp.BazaDataSetTableAdapters.elektrokardiogramyTableAdapter();
             this.lekiTableAdapter1 = new rtfapp.BazaDataSetTableAdapters.lekiTableAdapter();
             this.listBoxWypisy = new System.Windows.Forms.ListBox();
-            this.echoControl1 = new rtfapp.EchoControl();
             this.buttonSzukajPacjenta = new System.Windows.Forms.Button();
+            this.RefreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.echoControl1 = new rtfapp.EchoControl();
             pESELLabel = new System.Windows.Forms.Label();
             imieLabel = new System.Windows.Forms.Label();
             nazwiskoLabel = new System.Windows.Forms.Label();
@@ -153,12 +154,12 @@
             this.TabEpikryza.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.badania_laboratoryjneDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hospitalizacjeBindingSource)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.badania_laboratoryjneBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacjenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hospitalizacjeBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.elektrokardiogramyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hosp_rozpBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rozpoznaniaBindingSource)).BeginInit();
@@ -787,6 +788,37 @@
             this.badania_laboratoryjneDataGridView.Size = new System.Drawing.Size(462, 438);
             this.badania_laboratoryjneDataGridView.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nazwa Badania";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nazwa Badania";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Data_badania";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Data_badania";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Wynik";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Wynik";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // badania_laboratoryjneBindingSource
+            // 
+            this.badania_laboratoryjneBindingSource.DataMember = "badania_laboratoryjne";
+            this.badania_laboratoryjneBindingSource.DataSource = this.bazaDataSet;
+            // 
+            // bazaDataSet
+            // 
+            this.bazaDataSet.DataSetName = "BazaDataSet";
+            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // PrzyciskLadowaniaWypisu
             // 
             this.PrzyciskLadowaniaWypisu.Location = new System.Drawing.Point(482, 3);
@@ -804,6 +836,11 @@
             this.pESELTextBox.Name = "pESELTextBox";
             this.pESELTextBox.Size = new System.Drawing.Size(100, 20);
             this.pESELTextBox.TabIndex = 15;
+            // 
+            // pacjenciBindingSource
+            // 
+            this.pacjenciBindingSource.DataMember = "pacjenci";
+            this.pacjenciBindingSource.DataSource = this.bazaDataSet;
             // 
             // imieTextBox
             // 
@@ -896,7 +933,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.263823F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.73618F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 570F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 576F));
             this.tableLayoutPanel1.Controls.Add(this.DzisiejszeWypisy, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.Taby, 2, 1);
@@ -935,7 +972,7 @@
             this.panel1.Controls.Add(this.data_PrzyjeciaDateTimePicker);
             this.panel1.Controls.Add(this.zgonCheckBox);
             this.panel1.Controls.Add(data_PrzyjeciaLabel);
-            this.panel1.Location = new System.Drawing.Point(952, 3);
+            this.panel1.Location = new System.Drawing.Point(946, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 102);
             this.panel1.TabIndex = 30;
@@ -944,24 +981,20 @@
             // 
             this.textControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textControl.Font = new System.Drawing.Font("Arial", 10F);
-            this.textControl.Location = new System.Drawing.Point(15, 116);
+            this.textControl.Location = new System.Drawing.Point(14, 116);
             this.textControl.Name = "textControl";
             this.tableLayoutPanel1.SetRowSpan(this.textControl, 3);
-            this.textControl.Size = new System.Drawing.Size(931, 737);
+            this.textControl.Size = new System.Drawing.Size(926, 737);
             this.textControl.TabIndex = 32;
             this.textControl.Click += new System.EventHandler(this.textControl1_Click);
-            // 
-            // serverTextControl1
-            // 
-            this.serverTextControl1.SpellChecker = null;
             // 
             // buttonBar
             // 
             this.buttonBar.BackColor = System.Drawing.SystemColors.Control;
             this.buttonBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonBar.Location = new System.Drawing.Point(15, 82);
+            this.buttonBar.Location = new System.Drawing.Point(14, 82);
             this.buttonBar.Name = "buttonBar";
-            this.buttonBar.Size = new System.Drawing.Size(931, 28);
+            this.buttonBar.Size = new System.Drawing.Size(926, 28);
             this.buttonBar.TabIndex = 33;
             this.buttonBar.Text = "buttonBar1";
             // 
@@ -969,73 +1002,41 @@
             // 
             this.button1.Location = new System.Drawing.Point(3, 750);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(6, 32);
+            this.button1.Size = new System.Drawing.Size(5, 32);
             this.button1.TabIndex = 34;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // serverTextControl1
+            // 
+            this.serverTextControl1.SpellChecker = null;
             // 
             // button16
             // 
             this.button16.Location = new System.Drawing.Point(26, 5);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(104, 81);
+            this.button16.Size = new System.Drawing.Size(76, 81);
             this.button16.TabIndex = 30;
             this.button16.Text = "DRUKUJ";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(142, 5);
+            this.button17.Location = new System.Drawing.Point(108, 5);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(104, 81);
+            this.button17.Size = new System.Drawing.Size(91, 81);
             this.button17.TabIndex = 31;
             this.button17.Text = "Drukuj Receptę";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(257, 5);
+            this.button18.Location = new System.Drawing.Point(204, 5);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(104, 81);
+            this.button18.Size = new System.Drawing.Size(80, 81);
             this.button18.TabIndex = 32;
             this.button18.Text = "Zatwierdź";
             this.button18.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nazwa Badania";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nazwa Badania";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Data_badania";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Data_badania";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Wynik";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Wynik";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // badania_laboratoryjneBindingSource
-            // 
-            this.badania_laboratoryjneBindingSource.DataMember = "badania_laboratoryjne";
-            this.badania_laboratoryjneBindingSource.DataSource = this.bazaDataSet;
-            // 
-            // bazaDataSet
-            // 
-            this.bazaDataSet.DataSetName = "BazaDataSet";
-            this.bazaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pacjenciBindingSource
-            // 
-            this.pacjenciBindingSource.DataMember = "pacjenci";
-            this.pacjenciBindingSource.DataSource = this.bazaDataSet;
             // 
             // elektrokardiogramyBindingSource
             // 
@@ -1115,13 +1116,27 @@
             // listBoxWypisy
             // 
             this.listBoxWypisy.FormattingEnabled = true;
-            this.listBoxWypisy.Location = new System.Drawing.Point(379, 9);
+            this.listBoxWypisy.Location = new System.Drawing.Point(289, 10);
             this.listBoxWypisy.MultiColumn = true;
             this.listBoxWypisy.Name = "listBoxWypisy";
-            this.listBoxWypisy.Size = new System.Drawing.Size(281, 69);
+            this.listBoxWypisy.Size = new System.Drawing.Size(520, 82);
             this.listBoxWypisy.TabIndex = 33;
-            this.listBoxWypisy.MouseLeave += new System.EventHandler(this.listBoxWypisy_MouseLeave);
-            this.listBoxWypisy.MouseHover += new System.EventHandler(this.listBoxWypisy_MouseHover);
+            this.listBoxWypisy.SelectedIndexChanged += new System.EventHandler(this.listBoxWypisy_SelectedIndexChanged);
+            // 
+            // buttonSzukajPacjenta
+            // 
+            this.buttonSzukajPacjenta.Location = new System.Drawing.Point(815, 5);
+            this.buttonSzukajPacjenta.Name = "buttonSzukajPacjenta";
+            this.buttonSzukajPacjenta.Size = new System.Drawing.Size(104, 81);
+            this.buttonSzukajPacjenta.TabIndex = 34;
+            this.buttonSzukajPacjenta.Text = "Szukaj";
+            this.buttonSzukajPacjenta.UseVisualStyleBackColor = true;
+            // 
+            // RefreshTimer
+            // 
+            this.RefreshTimer.Enabled = true;
+            this.RefreshTimer.Interval = 2000;
+            this.RefreshTimer.Tick += new System.EventHandler(this.RefreshTimer_Tick);
             // 
             // echoControl1
             // 
@@ -1132,15 +1147,6 @@
             this.echoControl1.TabIndex = 0;
             this.echoControl1.Leave += new System.EventHandler(this.echoControl1_Leave);
             this.echoControl1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.echoControl1_MouseUp);
-            // 
-            // buttonSzukajPacjenta
-            // 
-            this.buttonSzukajPacjenta.Location = new System.Drawing.Point(815, 5);
-            this.buttonSzukajPacjenta.Name = "buttonSzukajPacjenta";
-            this.buttonSzukajPacjenta.Size = new System.Drawing.Size(104, 81);
-            this.buttonSzukajPacjenta.TabIndex = 34;
-            this.buttonSzukajPacjenta.Text = "Szukaj";
-            this.buttonSzukajPacjenta.UseVisualStyleBackColor = true;
             // 
             // OknoWypisu
             // 
@@ -1155,7 +1161,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "OknoWypisu";
             this.Text = "Wypis";
-            this.Load += new System.EventHandler(this.OknoWypisu_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OknoWypisu_KeyPress);
             this.Validated += new System.EventHandler(this.OknoWypisu_Validated);
             this.Taby.ResumeLayout(false);
@@ -1176,14 +1181,14 @@
             this.TabEpikryza.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.badania_laboratoryjneDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badania_laboratoryjneBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pacjenciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hospitalizacjeBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.badania_laboratoryjneBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pacjenciBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elektrokardiogramyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hosp_rozpBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rozpoznaniaBindingSource)).EndInit();
@@ -1290,5 +1295,6 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.ListBox listBoxWypisy;
         private System.Windows.Forms.Button buttonSzukajPacjenta;
+        private System.Windows.Forms.Timer RefreshTimer;
     }
 }

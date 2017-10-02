@@ -49,7 +49,7 @@ namespace rtfapp.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database=\"bazapacjento" +
-            "w v2\"")]
+            "w v2\";password=rock6699LIS@")]
         public string bazapacjentow_v2ConnectionString1 {
             get {
                 return ((string)(this["bazapacjentow_v2ConnectionString1"]));
@@ -60,7 +60,7 @@ namespace rtfapp.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("server=172.16.2.46;user id=Konrad;persistsecurityinfo=True;database=\"bazapacjento" +
-            "w v2\";allowuservariables=True")]
+            "w v2\";allowuservariables=True;password=rock6699LIS@")]
         public string bazapacjentow_v2ConnectionString2 {
             get {
                 return ((string)(this["bazapacjentow_v2ConnectionString2"]));
